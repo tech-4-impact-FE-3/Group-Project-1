@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Reset  styling */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(img/bg-login.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Login */
+.login-page {
+    display: grid;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.login-image img {
+    display: grid;
+    align-items: center;
+    margin: 70px 0px;
+    width: 450px;
+}
+
+.login-text {
+    display: grid;
+    margin-top: 40px;
+    margin-left: 150px;
+}
+
+.login-text input {
+    border-radius: 10px;
+    padding: 5px;
+    padding-right: 110px;
+}
+
+.login-text button {
+    width: 320px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #E9CCB1;
+    margin-bottom: 30px;
+}
+
+.login-cancel a {
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* Register */
+.register-page {
+    display: grid;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.register-image img {
+    display: grid;
+    align-items: center;
+    margin: 70px 0px;
+    width: 450px;
+}
+
+.register-text {
+    display: grid;
+    margin-top: 40px;
+    margin-left: 150px;
+}
+
+.register-text input {
+    border-radius: 10px;
+    padding: 5px;
+    padding-right: 110px;
+}
+
+.register-text button {
+    width: 320px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #E9CCB1;
+    margin-bottom: 30px;
+}
+
+.register-cancel a {
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+}
