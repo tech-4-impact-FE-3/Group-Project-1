@@ -45,3 +45,43 @@ body {
     padding: 5px;
     border-radius: 10px;
 }
+
+/* Register */
+.register-page {
+    display: grid;
+    margin-top: 60px;
+    align-items: center;
+}
+.register-image img {
+    display: grid;
+    align-items: center;
+    margin: 70px 0px;
+    width: 450px;
+}
+
+.register-text {
+    display: grid;
+    margin-top: 40px;
+    margin-left: 150px;
+}
+
+.register-text input {
+    border-radius: 10px;
+    padding: 5px;
+    padding-right: 110px;
+}
+
+.register-text button {
+    width: 320px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #E9CCB1;
+    margin-bottom: 30px;
+}
+
+.register-cancel a {
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+}
