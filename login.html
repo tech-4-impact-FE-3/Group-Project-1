@@ -16,40 +16,43 @@
 </head>
 <body>
     
-    <section class="login" id="login">
-        <div class="login-image">
-            <center><h1><b>Login</b></h1></center>
-            <img src="img/login-img.png" />
-            <br>
-            <a href="#">Cancel</a>
-        </div>
+    <div class="container login-page">
+        <div class="row align-items-center">
+            <div class="col register-image">
+                <center><h1><b>Login</b></h1></center>
+                <img src="./img/login-img.png" alt="login" />
+            </div>
 
-        <div class="login-text">
-            <form id="sign-in">
-                <h2>Login</h2>
-                
-                <div class="field">
-                    <label for="username">Username</label>
+            <div class="col login-text">
+                <form id="sign-in">
+                    <h2>Login</h2>
+                    
+                    <div class="field">
+                        <label for="username">Username</label>
+                        <br />
+                        <input type="text" id="username" name="username" placeholder=" Username"/>    
+                    </div>
+        
+                    <div class="field">
+                        <label for="password">Password</label>
+                        <br />
+                        <input type="password" id="password" name="password" placeholder=" Password"/>
+                    </div>
                     <br />
-                    <input type="text" id="username" name="username" placeholder=" Ex : johndoe@gmail.com"/>    
-                </div>
+                    <p>
+                        Don't have an account?
+                        <a href="./register.html">Create account</a>
+                    </p>
     
-                <div class="field">
-                    <label for="password">Password</label>
-                    <br />
-                    <input type="password" id="password" name="password" placeholder=" Password"/>
-                </div>
-                <br />
-                <p>
-                    Don't have an account?
-                    <a href="#">Create account</a>
-                </p>
+                    <button type="submit" class="login-btn">Login</button>
+                </form>
+            </div>
 
-                <button type="submit" class="login-btn">Login</button>
-            </form>
+            <div class="login-cancel">
+                <a href="./index.html">Cancel</a>
+            </div>
         </div>
-    </section>
-    
+    </div>
     
     <script src="script.js"></script>
 </body>
