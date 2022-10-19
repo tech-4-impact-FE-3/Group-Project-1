@@ -15,23 +15,23 @@ body {
 }
 
 /* Login */
-.login {
-    display: flex;
+.login-page {
+    display: grid;
+    margin-top: 60px;
     align-items: center;
-    justify-content: space-around;
-    padding: 50px;
 }
 
 .login-image img {
-    margin: 83px 0px;
-    width: 400px;
+    display: grid;
+    align-items: center;
+    margin: 70px 0px;
+    width: 450px;
 }
 
-.login-image a {
-    padding: 5px;
-    background-color: white;
-    border-radius: 10px;
-    border: 1px solid black;
+.login-text {
+    display: grid;
+    margin-top: 40px;
+    margin-left: 150px;
 }
 
 .login-text input {
@@ -41,7 +41,16 @@ body {
 }
 
 .login-text button {
-    width: 100%;
+    width: 320px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #E9CCB1;
+    margin-bottom: 30px;
+}
+
+.login-cancel a {
+    background-color: white;
+    border: 1px solid black;
     padding: 5px;
     border-radius: 10px;
 }
@@ -52,6 +61,7 @@ body {
     margin-top: 60px;
     align-items: center;
 }
+
 .register-image img {
     display: grid;
     align-items: center;
