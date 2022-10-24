@@ -258,17 +258,28 @@ main {
 }
 
 .forum{
-    width: 300px;
+    width: 500px;
     margin: 1rem;
     border-radius: 3px;
     box-shadow: #fff;
     position: relative;
     overflow: hidden;
+    align-items: center;
+
+}
+.new{
+    font-weight: bold;
+    position: relative;
 }
 .container-forum{
     display: flex;
     flex-direction: column;
 }
+.indent{
+    text-indent: 2em;
+    text-align:justify;
+}
+
 
 .forum img{
     width:100%;
@@ -282,6 +293,7 @@ main {
 .forum-info h3{
     margin-top: 0;
     color:black;
+    text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
