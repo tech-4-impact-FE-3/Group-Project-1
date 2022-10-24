@@ -1,7 +1,7 @@
 const signUp = e => {
-    let username = document.querySelector('#username').value,
-        email = document.querySelector('#email').value,
-        password = document.querySelector('#password').value;
+    let username = document.getElementById('username').value,
+        email = document.getElementById('email').value,
+        password = document.getElementById('password').value;
 
         let formData = JSON.parse(localStorage.getItem('formData')) || [];
 
@@ -14,8 +14,8 @@ const signUp = e => {
             formData.push({ username, email, password });
             localStorage.setItem('formData', JSON.stringify(formData));
             document.querySelector('form').reset();
-            document.querySelector('#username').focus();
-            alert("Account Created.\n\nPlease Sign In using the link below.");
+            document.getElementById('username').focus();
+            alert("Account Created.\n\nPlease Login!");
         }
         else{
             alert("Ooopps... Duplicate found!!!\nYou have already signed up");
