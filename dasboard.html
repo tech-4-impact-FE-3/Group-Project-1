@@ -1,46 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- BoxIcons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body style="background-color: #FFF1E6; background-image: none;">
+  <body style="background-color: #fff1e6; background-image: none">
     <header>
-        <div class="container">
-            <div class="logo">
-                <img src="./img/logo.png" alt="logo-icon" />
-                <a href="./dasboard.html"><strong>Explore<span class="pink">ASEAN</span></strong></a>
-            </div>
-            <form id="form">
-                <input type="text" placeholder="Search for forum" id="search" class="search">
-            </form>
+      <div class="container">
+        <div class="logo">
+          <img src="./img/logo.png" alt="logo-icon" />
+          <a href="./dasboard.html"
+            ><strong>Explore<span class="pink">ASEAN</span></strong></a
+          >
         </div>
-        <div class="profile">
-            <img src="./img/profile.png" alt="profile-icon" />
-            <a href="">My Profile</a>
-        </div>
+        <form id="form">
+          <input
+            type="text"
+            placeholder="Search for forum"
+            id="search"
+            class="search"
+          />
+        </form>
+      </div>
+      <div class="profile">
+        <img src="./img/profile.png" alt="profile-icon" />
+        <a href="">My Profile</a>
+      </div>
     </header>
     <main id="main">
-        <div class="category">
-            <ul>
-                <li><a href="./dasboard.html">Trending</a></li>
-                <li><a href="">Politics</a></li>
-                <li><a href="">Health</a></li>
-                <li><a href="">Education</a></li>
-                <li><a href="">Others</a></li>
-            </ul>
+      <div class="category">
+        <ul>
+          <li><a href="./dasboard.html">Trending</a></li>
+          <li><a href="">Politics</a></li>
+          <li><a href="">Health</a></li>
+          <li><a href="">Education</a></li>
+          <li><a href="">Others</a></li>
+        </ul>
+      </div>
+      <div class="container-forum">
+        <div class="forum">
+          <img src="./img/asean education.jpg" alt="image"/>
+          <div class="forum-info">
+            <h3>Pemerintah Indonesia Ajak Negara ASEAN Fokus Pulihkan Pendidikan</h3>
+          </div>
+          <div class="overview">
+            Dalam pertemuan ke-12 Menteri Pendidikan se-ASEAN 
+            (Twelfth ASEAN Education Minister Meeting/12th ASED) 
+            di Hanoi, Vietnam, pada 13-14 Oktober 2022..
+          </div>
         </div>
-    </main>
-</body>
-
+        <div class="forum">
+          <img src="./img/asean politik.jpg" alt="image"/>
+          <div class="forum-info">
+            <h3>9 Bentuk Kerjasama dalam Bidang Politik ASEAN</h3>
+          </div>
+          <div class="overview">
+            bermanfaat bagi para pelajar dan umum dalam memahami 
+            apa saja jenis-jenis kerjasama yang diterapkan para negara Asia Tenggara hingga kini..
+          </div>
+        </div>
+        <div class="forum">
+          <img src="./img/kesehatan asean.jpg" alt="image"/>
+          <div class="forum-info">
+            <h3>Indonesia akan dorong penguatan kerja sama kesehatan ASEAN pada 2023</h3>
+          </div>
+          <div class="overview">
+            Kita kan ingin ASEAN menjadi episentrum pertumbuhan ekonomi, kan tidak mungkin ekonomi tumbuh 
+            kalau orangnya pada sakit maka integrasi ASEAN harus semakin diperkuat termasuk di bidang kesehatan..
+          </div>
+        </div>
+      </div>
+      </main>
+  </body>
 </html>
