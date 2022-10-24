@@ -257,6 +257,44 @@ main {
 .category a:hover {
     color: #D7715C;
 }
+.berita{
+    width: 500px;
+    margin: 1rem;
+    border-radius: 3px;
+    box-shadow: #fff;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+
+}
+.new{
+    font-weight: bold;
+    position: relative;
+}
+.container-berita{
+    display: flex;
+    flex-direction: column;
+}
+.indent{
+    text-indent: 2em;
+    text-align:justify;
+}
+
+
+.isi-berita img{
+    width:100%;
+}
+.isi-berita{
+    display: flex;
+    align-items: center;
+    padding: 0,5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+.isi-berita h3{
+    margin-top: 0;
+    color:black;
+    text-align: center;
+}
 
 @media only screen and (min-width: 768px) {
     .index-text p {
