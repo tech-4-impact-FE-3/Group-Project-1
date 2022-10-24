@@ -281,4 +281,13 @@ main {
     .index-text a {
         margin: 1rem 0 3rem;
     }
+    main{
+        display: flex;
+    }
+    .forum{
+        width: 300px;
+    }
+    .forum img{
+        width:100%;
+    }
 }
