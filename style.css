@@ -263,6 +263,58 @@ main {
     }
 }
 
+
+/* Upload */
+
+.main-upload {
+    margin-top: 4rem;
+    margin-left: 16rem;
+}
+
+.upload {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.upload h3 {
+    margin-bottom: 1rem;
+    color: #072D4B;
+}
+
+.upload-text {
+    align-self: stretch;
+}
+
+#upload-title {
+    border: 1px solid rgb(194, 194, 194);
+    align-self: stretch;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+#upload-title:focus {
+    outline: 0;
+}
+
+.upload-btn {
+    font-size: 0.75rem;
+    align-self: flex-end;
+    margin: 2rem 0;
+    text-decoration: none;
+    padding: 10px 50px;
+    border-radius: 10px;
+    color: #fff;
+    border: 1px solid #072D4B;
+    background-color: #072D4B;
+}
+
+.upload-btn:hover {
+    background-color: #D7715C;
+    border-color: #D7715C;
+}
+
 @media only screen and (max-width: 768px) {
     .index-page {
         flex-direction: column;
