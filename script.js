@@ -1,30 +1,39 @@
-let loginForm = document.querySelector("#sign-in")
-let inputUsername = document.querySelector("#username")
-let inputPassword = document.querySelector("#password")
+const signUp = e => {
+    let username = document.getElementById('username').value,
+        email = document.getElementById('email').value,
+        password = document.getElementById('password').value;
 
-let user = {
-    username : "deva",
-    password : "12345"
+        let formData = JSON.parse(localStorage.getItem('formData')) || [];
+
+        let exist = formData.length && 
+        JSON.parse(localStorage.getItem('formData')).some(data => 
+            data.username.toLowerCase() == username.toLowerCase()
+        );
+
+        if(!exist){
+            formData.push({ username, email, password });
+            localStorage.setItem('formData', JSON.stringify(formData));
+            document.querySelector('form').reset();
+            document.getElementById('username').focus();
+            alert("Account Created.\n\nPlease Login!");
+        }
+        else{
+            alert("Ooopps... Duplicate found!!!\nYou have already signed up");
+        }
+        e.preventDefault();
 }
 
-loginForm.addEventListener("submit", (event) => {
-    event.preventDefault()
-    console.log(inputUsername.value);
-    console.log(inputPassword.value);
-    let userLogin = {
-        username : inputUsername.value,
-        password : inputPassword.value
+function signIn(e) {
+    let username = document.getElementById('username').value, 
+        password = document.getElementById('password').value;
+    let formData = JSON.parse(localStorage.getItem('formData')) || [];
+    let exist = formData.length && 
+    JSON.parse(localStorage.getItem('formData')).some(data => data.username.toLowerCase() == username && data.password.toLowerCase() == password);
+    if(!exist){
+        alert("Incorrect login credentials");
     }
-    console.log(userLogin);
-
-    let login = userLogin.username == user.username && userLogin.password == user.password
-
-    if (login) {
-        console.log("Selamat anda berhasil login!");
-        alert("Selamat anda berhasil login!");
-    } else {
-        console.log("username atau password salah");
-        alert("username atau password salah")
+    else{
+        location.href = "./dasboard.html";
     }
-    loginForm.reset()
-})
+    e.preventDefault();
+}

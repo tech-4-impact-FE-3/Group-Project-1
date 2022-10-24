@@ -79,7 +79,7 @@ body {
 .login-image img {
     display: grid;
     align-items: center;
-    margin: 70px 0px;
+    margin: 60px 0px;
     width: 450px;
 }
 
@@ -104,12 +104,21 @@ body {
 }
 
 .login-cancel a {
-    background-color: white;
+    background-color: #E9CCB1;
     border: 1px solid black;
     padding: 5px;
     border-radius: 10px;
 }
 
+.login-text button:hover {
+    color:white;
+    background-color: #D7715C;
+}
+
+.login-cancel a:hover {
+    color: white;
+    background-color: #D7715C;
+}
 
 /* Register */
 
@@ -122,7 +131,7 @@ body {
 .register-image img {
     display: grid;
     align-items: center;
-    margin: 70px 0px;
+    margin: 60px 0px;
     width: 450px;
 }
 
@@ -147,12 +156,21 @@ body {
 }
 
 .register-cancel a {
-    background-color: white;
+    background-color: #E9CCB1;
     border: 1px solid black;
     padding: 5px;
     border-radius: 10px;
 }
 
+.register-text button:hover {
+    color:white;
+    background-color: #D7715C;
+}
+
+.register-cancel a:hover {
+    color: white;
+    background-color: #D7715C;
+}
 
 /* Dashboard */
 
@@ -219,6 +237,7 @@ header .container {
 .profile a {
     color: #072D4B;
     text-decoration: none;
+    width: 5rem;
 }
 
 .profile a:hover {
@@ -227,12 +246,13 @@ header .container {
 
 main {
     display: flex;
+    justify-content: space-between;
 }
 
 .category {
     width: 15%;
     margin-top: 4rem;
-    margin-left: 3rem;
+    margin-left: 6rem;
 }
 
 .category ul {
@@ -257,10 +277,185 @@ main {
     color: #D7715C;
 }
 
+.new {
+    color: #072D4B;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.container-berita {
+    margin: 4rem 1rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.indent {
+    text-indent: 2em;
+    text-align: justify;
+}
+
+.indent p {
+    font-size: 0.5rem;
+}
+
+.isi-berita img {
+    width: 75%;
+    margin: 1rem 0;
+}
+
+.isi-berita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    letter-spacing: 0.5px;
+    background-color: #F9F5F4;
+    border-radius: 10px;
+}
+
+.judul-forum h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #072D4B;
+    text-align: center;
+}
+
 @media only screen and (min-width: 768px) {
     .index-text p {
         width: 50%;
     }
+}
+
+.forum {
+    margin: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: #fff;
+    position: relative;
+    overflow: hidden;
+    background-color: #F9F5F4;
+}
+
+.container-forum {
+    margin-bottom: 4rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.container-forum h2 {
+    margin: 2rem 1rem 0 2rem;
+    font-size: 1.5rem;
+    color: #072D4B;
+}
+
+.forum img {
+    width: 100%;
+}
+
+.forum-info a {
+    text-decoration: none;
+}
+
+.forum-info h3 {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    color: #072D4B;
+    letter-spacing: 0.5px;
+}
+
+.forum-info h3:hover {
+    color: #D7715C;
+}
+
+.overview {
+    margin-top: 1rem;
+}
+
+.make-forum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    margin-right: 6rem;
+}
+
+.make-forum img {
+    width: 75%;
+}
+
+.make-forum a {
+    font-size: 0.75rem;
+    margin: 2rem 0;
+    text-decoration: none;
+    padding: 10px 50px;
+    border-radius: 20px;
+    color: #072D4B;
+    border: 1px solid #E9CCB1;
+    background-color: #E9CCB1;
+}
+
+.make-forum a:hover {
+    color: #fff;
+    border: 1px solid #072D4B;
+    background-color: #072D4B;
+}
+
+
+/* Upload */
+
+.main-upload {
+    margin-top: 4rem;
+    margin-left: 16rem;
+}
+
+.upload {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.upload h3 {
+    margin-bottom: 1rem;
+    color: #072D4B;
+}
+
+.upload-text {
+    align-self: stretch;
+}
+
+#upload-title {
+    border: 1px solid rgb(183, 183, 183);
+    align-self: stretch;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+#upload-title:focus {
+    outline: 0;
+}
+
+.upload-btn {
+    font-size: 0.75rem;
+    align-self: flex-end;
+    margin: 2rem 0;
+    text-decoration: none;
+    padding: 10px 50px;
+    border-radius: 10px;
+    color: #fff;
+    border: 1px solid #072D4B;
+    background-color: #072D4B;
+}
+
+.upload-btn:hover {
+    background-color: #D7715C;
+    border-color: #D7715C;
 }
 
 
