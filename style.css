@@ -227,12 +227,13 @@ header .container {
 
 main {
     display: flex;
+    justify-content: space-between;
 }
 
 .category {
     width: 15%;
     margin-top: 4rem;
-    margin-left: 3rem;
+    margin-left: 6rem;
 }
 
 .category ul {
@@ -264,33 +265,72 @@ main {
 }
 
 .forum {
-    width: 300px;
     margin: 1rem;
-    border-radius: 3px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
     box-shadow: #fff;
     position: relative;
     overflow: hidden;
+    background-color: #F9F5F4;
 }
 
 .container-forum {
+    margin-bottom: 4rem;
+    width: 50%;
     display: flex;
     flex-direction: column;
+    margin-top: 2rem;
+}
+
+.container-forum h2 {
+    margin: 2rem 1rem 0 2rem;
+    font-size: 1.5rem;
+    color: #072D4B;
 }
 
 .forum img {
     width: 100%;
 }
 
-.forum-info {
-    display: flex;
-    align-items: center;
-    padding: 0, 5rem 1rem 1rem;
+.forum-info h3 {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    color: #072D4B;
     letter-spacing: 0.5px;
 }
 
-.forum-info h3 {
-    margin-top: 0;
-    color: black;
+.overview {
+    margin-top: 1rem;
+}
+
+.make-forum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    margin-right: 6rem;
+}
+
+.make-forum img {
+    width: 75%;
+}
+
+.make-forum a {
+    font-size: 0.75rem;
+    margin: 2rem 0;
+    text-decoration: none;
+    padding: 10px 50px;
+    border-radius: 20px;
+    color: #072D4B;
+    border: 1px solid #E9CCB1;
+    background-color: #E9CCB1;
+}
+
+.make-forum a:hover {
+    color: #fff;
+    border: 1px solid #072D4B;
+    background-color: #072D4B;
 }
 
 
